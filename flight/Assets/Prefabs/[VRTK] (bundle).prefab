@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 114836065467234864}
   - component: {fileID: 114111488873808876}
   - component: {fileID: 114336209369362892}
-  - component: {fileID: 114475183108956810}
   m_Layer: 0
   m_Name: PlayArea
   m_TagString: Untagged
@@ -198,7 +197,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4093390503609494}
-  - component: {fileID: 114830420603183160}
   - component: {fileID: 114450852776474040}
   m_Layer: 0
   m_Name: LocomotionScripts
@@ -855,7 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4210c53fb536cdd4a85afbc06d265bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: 0.3
+  fh: {fileID: 0}
 --- !u!114 &114096338526112154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1164,10 +1162,16 @@ MonoBehaviour:
   maxRotation: 45
   rotationMode: 1
   flightDirection: 1
+  diveIntensity: 100
+  increaseFallSpeedWithRotation: 0
   engageMode: 1
   engageButton: 3
   glideControllerMinDistance: 0.8
   minThrustForceThreshold: 0.01
+  tiltIntensity: 45
+  canGlideBackwards: 1
+  maxTurnRate: 4
+  timeBeforeGlideSound: 1
 --- !u!114 &114471917420580966
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1189,28 +1193,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114475183108956810
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1073953207454636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba3df05c72dd2de46a787dce7cf95032, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftController: 1
-  rightController: 1
-  engageButton: 4
-  controlOptions: 1
-  speedScale: 1
-  maxSpeed: 4
-  deceleration: 0.1
-  fallingDeceleration: 0.01
-  directionMethod: 1
-  smartDecoupleThreshold: 30
-  sensitivity: 0.02
 --- !u!114 &114570259229158740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1321,22 +1303,6 @@ MonoBehaviour:
     buttonTwo: {fileID: 0}
     systemMenu: {fileID: 0}
     startMenu: {fileID: 0}
---- !u!114 &114830420603183160
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1732144684016362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72884d5d6a8542649bb58b4fc8849c63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playArea: {fileID: 1073953207454636}
-  leftController: {fileID: 1880223860889840}
-  rightController: {fileID: 1206307345865514}
-  flightOnByDefault: 1
-  clearOnChange: 1
 --- !u!114 &114832359485378122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1395,7 +1361,7 @@ MonoBehaviour:
     OnClick:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114830420603183160}
+        - m_Target: {fileID: 0}
           m_MethodName: SelectFlying
           m_Mode: 1
           m_Arguments:
@@ -1427,7 +1393,7 @@ MonoBehaviour:
     OnClick:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114830420603183160}
+        - m_Target: {fileID: 0}
           m_MethodName: SelectRunning
           m_Mode: 1
           m_Arguments:
@@ -1459,7 +1425,7 @@ MonoBehaviour:
     OnClick:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 114830420603183160}
+        - m_Target: {fileID: 0}
           m_MethodName: SelectTeleport
           m_Mode: 1
           m_Arguments:
