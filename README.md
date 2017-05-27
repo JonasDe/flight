@@ -42,7 +42,7 @@ The main script is `FlightHandlerPhys` located in the Scripts folder. With the s
 
 ### FlightHandler Inspector Parameters
 
-![Image of Inspector](https://github.com/JonasDe/flight/images/FlightHandlerInspector.png)
+![Image of Inspector](https://github.com/JonasDe/flight/blob/master/images/FlightHandlerInspector.png)
 
 Most of these attributes should be self-explanatory, but for those that might not be, here are some instructions:
 
