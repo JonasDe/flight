@@ -1,0 +1,11 @@
+
+How to generate heightmaps for terrain generated with Blender:
+
+ - Open the .blend file for the heightmap you want
+ - Render the texture
+ - Save to file (as PNG)
+ - Open in Gimp, export as Raw (.data)
+   - Use Planar (RRR/GGG/BBB) setting when asked
+ - Import .data file in terrain asset
+   - It will ask for a .raw, but the .data is in the correct format.
+ - Use the TerrainToolkit to smooth it (the leveling issue has an unknown cause, could be due to Gimp not handling 16bit raw exports)
