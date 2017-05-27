@@ -97,5 +97,6 @@ How far apart must the controllers be kept to stay out of falling mode.
 
 It is not a perfect piece of code at this point. It is simply a proof of concept developed during a relatively short period of time. If we had the choice to redo it, we would implement things differently. There are still things that could be improved (the sound is one prime example) and some bugs are still in effect.
 
+There are also a lot of assets that aren't used in the project, but comes with the repo. They are remnants from trying out different features and environments, so delete any as you see fit if you fork. Some if it has been cleaned up but since the project has reached its end and due to a lack of interest in fiddling with dependencies it was left in that state.
 
 
