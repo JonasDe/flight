@@ -93,8 +93,11 @@ How far apart must the controllers be kept to stay out of falling mode.
 ## Credits & Contact
 
 [Erik](https://github.com/erikbjare)
+
 [Jonas](http://www.github.com/JonasDe)
+
 [Valthor](https://github.com/vlthr)
+
 [Simon](https://github.com/essenji)
 
 ## Disclaimer
