@@ -7,7 +7,11 @@ We release it now for anyone to try, and for those interested to continue develo
 ## Navigation
 There are 3 in-air states. Flying, Gliding and Falling. More on these below.
 
+
+
 **Important:** The trigger must be pressed at all times (either left or right hand trigger) to enable flight.
+You must keep the controller with the touch-pad menu in the right hand (otherwise the vector calculations will be inverted).
+
 
 **Increasing Altitude:**
 Flap your arms like a bird. Larger flaps will increase altitude more than smaller will.
